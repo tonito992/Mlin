@@ -30,10 +30,8 @@ namespace com.toni.mlin.Match.Board
             {
                 var newLine = Instantiate(this.lineView, transform);
                 newLine.gameObject.SetActive(true);
-                var startNode = this.nodeViews.First(node => node.Model.Coordinates.x == line.Start.x && node.Model.Coordinates.y == line.Start.y && node
-                    .Model.Depth == line.Depth);
-                var endNode = this.nodeViews.First(node => node.Model.Coordinates.x == line.End.x && node.Model.Coordinates.y == line.End.y && node
-                    .Model.Depth == line.Depth);
+                var startNode = this.nodeViews.First(node => node.Model == line.Start);
+                var endNode = this.nodeViews.First(node => node.Model == line.End);
                 newLine.points[0] = startNode.RectTransform.anchoredPosition;
                 newLine.points[1] = endNode.RectTransform.anchoredPosition;
             }
