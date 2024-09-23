@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using com.toni.mlin.Core;
 using com.toni.mlin.Ui;
 using UnityEngine;
 
 namespace com.toni.mlin.Match.Board
 {
-    public class BoardView : MonoBehaviour
+    public class BoardView : UIView
     {
         [SerializeField] private NodeView nodeView;
         [SerializeField] private UILineRenderer lineView;
@@ -13,7 +14,7 @@ namespace com.toni.mlin.Match.Board
         private List<NodeView> nodeViews;
         [SerializeField] private Board boardModel;
 
-        private void Awake()
+        public void Setup()
         {
             this.boardModel = BoardController.GenerateBoard(4);
             this.nodeViews = new List<NodeView>();

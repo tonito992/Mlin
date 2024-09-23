@@ -1,28 +1,18 @@
 using com.toni.mlin.Core;
-using UnityEngine;
 
 namespace com.toni.mlin.MainMenu
 {
-    public class MainMenuView : MonoBehaviour, IView
+    public class MainMenuView : UIView
     {
-        [SerializeField] private GameObject container;
-
         public void OnPressNewMatch()
         {
+            MainMenuController.Instance.StartMatch();
+            this.Hide();
         }
 
         public void OnPressExitGame()
         {
-        }
-
-        public void Show()
-        {
-            this.container.SetActive(true);
-        }
-
-        public void Hide()
-        {
-            this.container.SetActive(false);
+            MainMenuController.Instance.ExitGame();
         }
     }
 }
