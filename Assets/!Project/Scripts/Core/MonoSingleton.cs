@@ -16,10 +16,10 @@ namespace com.toni.mlin.Core
                 {
                     if (instance == null)
                     {
-                        instance = GameObject.FindObjectOfType<T>();
+                        instance = GameObject.FindFirstObjectByType<T>();
                         if (instance != null)
                         {
-                            if (GameObject.FindObjectsOfType<T>().Length > 1)
+                            if (GameObject.FindObjectsByType<T>(FindObjectsSortMode.None).Length > 1)
                             {
                                 UnityEngine.Debug.LogErrorFormat("Multiple instances of {0}", nameof(T).ToString());
                             }

@@ -7,7 +7,7 @@ namespace com.toni.mlin.Core
     {
         public static T[] FindViews<T>() where T : View
         {
-            return GameObject.FindObjectsOfType<T>();
+            return FindObjectsByType<T>(FindObjectsSortMode.None) ;
         }
 
         public static T FindView<T>() where T : View
