@@ -13,7 +13,6 @@ namespace com.toni.mlin.MainMenu
 
         public void OnPressExitGame()
         {
-
         }
 
         public void Show()
