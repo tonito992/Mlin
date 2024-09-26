@@ -1,3 +1,4 @@
+using System;
 using com.toni.mlin.Core;
 
 namespace com.toni.mlin.MainMenu
@@ -6,13 +7,18 @@ namespace com.toni.mlin.MainMenu
     {
         public void OnPressNewMatch()
         {
-            MainMenuController.Instance.StartMatch();
+            MainMenuController.Instance.OpenMatchScreen();
             this.Hide();
         }
 
         public void OnPressExitGame()
         {
             MainMenuController.Instance.ExitGame();
+        }
+
+        private void Start()
+        {
+            this.Show();
         }
     }
 }

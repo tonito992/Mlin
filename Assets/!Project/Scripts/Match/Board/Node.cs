@@ -10,13 +10,21 @@ namespace com.toni.mlin.Match.Board
 
         public int Depth { get; private set; }
 
+        public PlayerId Occupant { get; private set; }
+
         public static Node Create(int depth, int x, int y)
         {
             return new Node
             {
                 Depth = depth,
-                Coordinates = new Vector2Int(x, y)
+                Coordinates = new Vector2Int(x, y),
+                Occupant = PlayerId.None
             };
+        }
+
+        public void Occupy(PlayerId playerId)
+        {
+            Occupant = playerId;
         }
     }
 }

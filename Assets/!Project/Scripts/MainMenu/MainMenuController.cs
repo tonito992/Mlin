@@ -5,9 +5,9 @@ namespace com.toni.mlin.MainMenu
 {
     public class MainMenuController : MonoController<MainMenuController>
     {
-        public void StartMatch()
+        public void OpenMatchScreen()
         {
-            this.NotifyAll("OnStartMatch");
+            this.NotifyAll("OnEnterMatchScreen");
         }
 
         public void ExitGame()
