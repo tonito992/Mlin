@@ -16,7 +16,6 @@ namespace com.toni.mlin.Match
         public void Unregister(PieceView piece)
         {
             Pieces.Remove(piece);
-            Destroy(piece.gameObject);
         }
 
         [ObserverMethod]

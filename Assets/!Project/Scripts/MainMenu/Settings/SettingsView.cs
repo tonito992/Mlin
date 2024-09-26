@@ -23,8 +23,8 @@ namespace com.toni.mlin.MainMenu.Settings
             this.popUp.transform.DOScale(Vector3.one, .5f).SetEase(Ease.InCubic);
 
             this.gridSizeSlider.value = MatchController.Instance.MatchConfig.Size;
-            this.player1NameInput.textComponent.SetText(PlayerController.Instance.Player1.Name);
-            this.player2NameInput.textComponent.SetText(PlayerController.Instance.Player2.Name);
+            this.player1NameInput.SetTextWithoutNotify(PlayerController.Instance.Player1.Name);
+            this.player2NameInput.SetTextWithoutNotify(PlayerController.Instance.Player2.Name);
         }
 
         public void OnGridSliderValueChanged(float value)
