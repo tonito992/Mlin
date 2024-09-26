@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using com.toni.mlin.Match.Player;
 using UnityEngine;
 
 namespace com.toni.mlin.Match.Board

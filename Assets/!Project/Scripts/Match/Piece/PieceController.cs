@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using com.toni.mlin.Core;
 
-namespace com.toni.mlin.Match
+namespace com.toni.mlin.Match.Piece
 {
     public class PieceController : MonoController<PieceController>, IObserver
     {

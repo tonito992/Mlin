@@ -1,8 +1,8 @@
-﻿using System;
-using com.toni.mlin.Core;
+﻿using com.toni.mlin.Core;
+using com.toni.mlin.Match.Piece;
 using UnityEngine;
 
-namespace com.toni.mlin.Match
+namespace com.toni.mlin.Match.Player
 {
     public class PlayerController : MonoController<PlayerController>, IObserver
     {

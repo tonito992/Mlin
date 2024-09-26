@@ -1,4 +1,5 @@
 using com.toni.mlin.Core;
+using com.toni.mlin.MainMenu;
 using com.toni.mlin.Match.Board;
 using UnityEngine;
 
@@ -11,15 +12,21 @@ namespace com.toni.mlin.Match
         [ObserverMethod]
         private void OnInitiateGame()
         {
-            this.Show();
             this.boardView.Setup();
             this.boardView.Show();
         }
 
-        private void Start()
+        [ObserverMethod]
+        private void OnEnterMatchScreen()
+        {
+            this.Show();
+        }
+
+        private void Awake()
         {
             this.Hide();
             MatchController.Instance.Attach(this);
+            MainMenuController.Instance.Attach(this);
         }
     }
 }

@@ -1,6 +1,8 @@
 using System.Linq;
 using com.toni.mlin.Core;
 using com.toni.mlin.MainMenu;
+using com.toni.mlin.Match.Piece;
+using com.toni.mlin.Match.Player;
 
 namespace com.toni.mlin.Match
 {

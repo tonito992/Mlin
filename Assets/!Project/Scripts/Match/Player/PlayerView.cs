@@ -2,7 +2,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace com.toni.mlin.Match
+namespace com.toni.mlin.Match.Player
 {
     public class PlayerView : UIView, IObserver
     {
@@ -25,7 +25,7 @@ namespace com.toni.mlin.Match
             this.Setup();
         }
 
-        private void Start()
+        private void Awake()
         {
             MatchController.Instance.Attach(this);
         }

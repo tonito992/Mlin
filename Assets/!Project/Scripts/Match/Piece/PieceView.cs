@@ -1,12 +1,13 @@
 ﻿using com.toni.mlin.Core;
 using com.toni.mlin.Match.Board;
+using com.toni.mlin.Match.Player;
 using DG.Tweening;
 using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace com.toni.mlin.Match
+namespace com.toni.mlin.Match.Piece
 {
     public class PieceView : MonoBehaviour, IPointerDownHandler, IObserver
     {
@@ -28,7 +29,7 @@ namespace com.toni.mlin.Match
 
         public bool Removed { get; private set; }
 
-        public void Setup(Player player)
+        public void Setup(Player.Player player)
         {
             Owner = player.PlayerId;
             this.image.color = player.Color;

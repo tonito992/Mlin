@@ -31,7 +31,7 @@ namespace com.toni.mlin.Match
         }
 
         [ObserverMethod]
-        private void OnGameOver(Player winner)
+        private void OnGameOver(Player.Player winner)
         {
             this.Show();
             this.textWinnerName.SetText(winner.Name);

@@ -1,4 +1,4 @@
-﻿namespace com.toni.mlin.Match
+﻿namespace com.toni.mlin.Match.Player
 {
     public enum PlayerId
     {

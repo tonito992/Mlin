@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace com.toni.mlin.Match
+namespace com.toni.mlin.Match.Player
 {
     [Serializable]
     public class Player

@@ -1,4 +1,6 @@
 ﻿using com.toni.mlin.Core;
+using com.toni.mlin.Match.Piece;
+using com.toni.mlin.Match.Player;
 using UnityEngine;
 using UnityEngine.EventSystems;
 

@@ -1,5 +1,6 @@
 using com.toni.mlin.Core;
 using com.toni.mlin.Match;
+using com.toni.mlin.Match.Player;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
